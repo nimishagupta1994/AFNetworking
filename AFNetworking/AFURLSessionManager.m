@@ -101,6 +101,7 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 @property (nonatomic, copy) AFURLSessionTaskProgressBlock uploadProgressBlock;
 @property (nonatomic, copy) AFURLSessionTaskProgressBlock downloadProgressBlock;
 @property (nonatomic, copy) AFURLSessionTaskCompletionHandler completionHandler;
+@property (nonatomic,strong) NSMutableArray *hashKeys;
 @end
 
 @implementation AFURLSessionManagerTaskDelegate
